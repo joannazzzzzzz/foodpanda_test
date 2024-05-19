@@ -1,0 +1,18 @@
+models:
+  - name: q3
+    description: 
+      Answer to Q3 of take home test. Find the top active vendor by GMV in each country
+    meta:
+      owner: anxin.zhou97@gmail.com
+    columns:
+      - name: country_name
+        description: Name of country. 
+        tests:
+          - accepted_values: 
+            values: ['Singapore','Taiwan','Thailand']
+        tags: ['Primary Key']
+      - name: vendor_name
+        description: Name of top 1 active vendor rank by total gmv. (Primary Key)
+        tags: ['Primary Key']
+      - name: total_gmv
+        description: Sum of GMV for each active vendor in each country.
