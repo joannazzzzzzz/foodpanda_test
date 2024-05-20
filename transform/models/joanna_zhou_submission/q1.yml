@@ -1,0 +1,15 @@
+models:
+  - name: q1
+    description: 
+      Answer to Q1 of take home test. Find the total GMV by country
+    meta:
+      owner: anxin.zhou97@gmail.com
+    columns:
+      - name: country_name
+        description: Name of country.
+        tests:
+          - accepted_values: 
+            values: ['Singapore','Taiwan','Thailand']
+        tags: ['Primary Key']
+      - name: total_gmv
+        description: GMV calculated for each country.

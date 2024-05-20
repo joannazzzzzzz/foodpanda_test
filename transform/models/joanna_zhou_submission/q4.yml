@@ -1,0 +1,21 @@
+models:
+  - name: q4
+    description: 
+      Answer to Q4 of take home test. Find the top 2 vendors per country, in each year available in the dataset
+    meta:
+      owner: anxin.zhou97@gmail.com
+    columns:
+      - name: year
+        description: Order create year in local timezone.
+        tags: ['Primary Key']
+      - name: country_name
+        description: Name of country. 
+        tests:
+          - accepted_values: 
+            values: ['Singapore','Taiwan','Thailand']
+        tags: ['Primary Key']
+      - name: vendor_name
+        description: Name of top 2 vendor in each country rank by total gmv.
+        tags: ['Primary Key']
+      - name: total_gmv
+        description: Sum of GMV for each top 2 vendor in each country.

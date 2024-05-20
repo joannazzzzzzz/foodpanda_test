@@ -1,0 +1,17 @@
+models:
+  - name: q2
+    description: 
+      Answer to Q2 of take home test. Calculate the GMV of vendors in Taiwan and order the result their customer count
+    meta:
+      owner: anxin.zhou97@gmail.com
+    columns:
+      - name: vendor_name
+        description: Name of TW vendor. (Primary Key)
+        tests:
+          - unique
+          - not_null
+        tags: ['Primary Key']
+      - name: customer_count
+        description: Unique customer count for each TW vendor.
+      - name: total_gmv
+        description: Sum of GMV for each TW vendor.
