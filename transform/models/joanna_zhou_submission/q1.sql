@@ -13,3 +13,4 @@ select
 from `orders.orders_info`
 group by 1
 ;
+
